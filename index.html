@@ -27,6 +27,19 @@
         <span>At what time do you want to host the event?</span>
           <input id="time" type="time">
       </label>
+      <!-- Below it's demonstrated two ways of associating labels to inputs:
+      First is by associating explicitly with the 'for' attribute. The 'for' attribute
+      must be the same than the input 'id' attribute -->
+      <label for="billing-address">Same as billing address</label>
+      <input type="checkbox" id="billing-address">
+
+      <br>
+      <!-- Second, is associated by nesting, the input is now implicitly related to its label so 
+      in theory, a 'for' attribute should not be needed. However, for ensuring screen reader support,
+      its recommended to use the 'for' attribute in conjunction with input 'id' -->
+      <label for="telephone">Telephone Number
+        <input type="tel" id="telephone">
+      </label>
     </form>
 </body>
 </html>
