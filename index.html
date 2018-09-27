@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Efficient forms exercise</title>
+</head>
+<body>
+    <label for="event-choice">What kind of event are you hosting?</label>
+    <input list="event-types" id="event-choide" name="event-choice" />
+    <!-- using datalist element to combine both a fixed list of options with typing for selecting and option
+    instead of just scrolling through the list -->
+    <datalist id='event-types'>
+        <option value="Party">
+        <option value="Meeting">
+        <option value="Conference Talk">
+        <option value="Sports Game">
+    </datalist>
+</body>
+</html>
