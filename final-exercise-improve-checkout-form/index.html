@@ -17,30 +17,27 @@
   </section>
   <section class="form">
     <h3>Your Shipping Address</h3>
-    <label for="first-name">First Name
-      <input type="text" id="first-name" required>
-    </label>
-    <label for="last-name">Last Name
-      <input type="text" id="last-name" required>
+    <label for="full-name">Full Name
+      <input type="text" id="full-name" required autocomplete="name">
     </label>
     <label for="company">Company
-      <input type="text" id="company">
+      <input type="text" id="company" autocomplete="organization">
     </label>
     <label for="address-1">Street Address
-      <input type="text" id="address-1" placeholder="Street and number, P.O. box, c/o" required>
-      <input type="text" id="address-2"placeholder="Apartment, suite, unit, building, floor, etc">
+      <input type="text" id="address-1" placeholder="Street and number, P.O. box, c/o" required autocomplete="address-line1">
+      <input type="text" id="address-2"placeholder="Apartment, suite, unit, building, floor, etc" autocomplete="address-line2">
     </label>
     <label for="city">City
-      <input type="text" id="city" required>
+      <input type="text" id="city" required autocomplete="address-level2">
     </label>
     <label for="state">State/Province
-      <input type="text" id="state" required>
+      <input type="text" id="state" required autocomplete="address-level1">
     </label>
     <label for="postal-code">Postal Code
-      <input type="text" id="postal-code" required>
+      <input type="text" id="postal-code" required autocomplete="postal-code">
     </label>
     <label for="country">Country
-      <input type="text" id="country" required>
+      <input type="text" id="country" required autocomplete="country-name">
     </label>
 <!-- TODO: Rework input types for credit card -->
     <h3>Your Credit Card Information</h3>
@@ -62,12 +59,9 @@
     <label>CVV
       <input type="number">
     </label>
-    <h3>Your Shipping Address</h3>
-    <label for="first-name">First Name
-      <input type="text" id="first-name" required>
-    </label>
-    <label for="last-name">Last Name
-      <input type="text" id="last-name" required>
+    <h3>Your Billing Address</h3>
+    <label for="full-name">Full Name
+      <input type="text" id="full-name" required autocomplete="name">
     </label>
     <label for="company">Company
       <input type="text" id="company" required>
